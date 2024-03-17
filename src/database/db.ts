@@ -22,6 +22,7 @@ const db: ExtendedProtocol = pgp({
   database: `${DB_NAME}`,
   user: `${DB_USER}`,
   password: `${DB_PASSWORD}`,
+  ssl: true, // ssl should be true in production to avoid security issues
 });
 
 export { db, pgp };
