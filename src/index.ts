@@ -1,8 +1,8 @@
 import "dotenv/config";
-import { createExpressServer } from "./src/loader";
-import { logger } from "./src/loggers";
-import { SERVER_PORT } from "./src/config";
-import { db } from "./src/database/db";
+import { createExpressServer } from "./loader";
+import { logger } from "./loggers";
+import { SERVER_PORT } from "./config";
+import { db } from "./database/db";
 
 const startServer = async () => {
   try {
